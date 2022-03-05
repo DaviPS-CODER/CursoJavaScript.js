@@ -15,3 +15,5 @@ console.log(escola.substring(0,3)) // vai imprimir da posição 0 a 3, sem inclu
 console.log(escola.replace(3, "3")) // substitui o elemento na posição 3 pela string
 
 console.log("ana, maria, pedro".split(",")) // gera um array com os elementos da string, os dividindo pelo ponto
+
+a 
