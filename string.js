@@ -16,4 +16,3 @@ console.log(escola.replace(3, "3")) // substitui o elemento na posição 3 pela 
 
 console.log("ana, maria, pedro".split(",")) // gera um array com os elementos da string, os dividindo pelo ponto
 
-a 
