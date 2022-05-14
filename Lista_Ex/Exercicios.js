@@ -498,18 +498,203 @@ contador("hello world")*/
 conta()*/
 //======================================================================================================
 //Exercicio 26
-const outroContador = function(){
+/*const outroContador = function(){
     let n = 1
    
     while(n < 100){
         n++
         if(n%2 == 0){
         console.log(n)
+    } else {}
+}
+
+}
+outroContador()*/
+//========================================================================================================
+//Exercicio 27
+
+/*function calcularCrescimento(altura1, taxa1, altura2, taxa2) {
+    if(altura1 == altura2){
+        if (taxa1 > taxa2) {
+            return 'A criança 1 ultrapassará a criança 2 em 1 ano.'
+        } else if(taxa1 < taxa2) {
+            return 'A criança 2 ultrapassará a criança 1 em 1 ano.'
+        }else{
+            return 'As crianças tem igual altura e crescimento.'
+        }
     } else {
+        if (altura1 > altura2) {
+            if(taxa1 >= taxa2){
+                return 'A criança menor não ultrapassará a maior.'
+            }else{
+               return `A criança menor ultrapassará a maior em ${calcularTempo(altura1, taxa1, altura2, taxa2)} anos` 
+            }
+        } else {
+            if(taxa2 >= taxa1){
+                return 'A criança menor não ultrapassará a maior.'
+            }else{
+               return `A criança menor ultrapassará a maior em ${calcularTempo(altura1, taxa1, altura2, taxa2)} anos` 
+            }
+        }
+    }
+}
+
+function calcularTempo(alturaMenor, taxaAlturaMenor, alturaMaior, taxaAlturaMaior){
+    let qtdAnos = 0
+    while (alturaMenor < alturaMaior) {
+        alturaMenor += taxaAlturaMenor
+        alturaMaior += taxaAlturaMaior
+        qtdAnos++
+    }
+    //console.log(qtdAnos)
+    return qtdAnos
+}
+
+console.log(calcularCrescimento(150, 2, 130, 4));*/
+//==============================================================================================================
+//Exercicio 28
+/*function paresImpares(vetorNumeros) {
+    let qtdPares = 0
+    let qtdImpares = 0
+    for (let i = 0; i < vetorNumeros.length; i++) {
+        if (vetorNumeros[i] % 2 == 0) {
+            qtdPares++
+        } else {
+            qtdImpares++
+        }
+    }
+    console.log(`${qtdPares} números pares e ${qtdImpares} números ímpares.`)
+}
+
+vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+paresImpares(vetor)*/
+//====================================================================================================
+//Exercicio 29
+/*const contador = function(vetor){
+    let Qtd = 0
+    for(let i = 0; i < vetor.length;i++){
+        if(vetor[i]>= 10 && vetor[i] <= 20){
+            Qtd++
+        }
+    }
+return Qtd
+
+}
+vetor = [2,3,4,5,6,7,10]
+console.log(contador(vetor))*/
+//=======================================================================================================
+//Exercicio 30
+/*const LerVetor = function(vetor){
+    let QtdMaior = 0
+    let QtdMenor = 0
+    for(let i = 0; i<vetor.length;i++){
+        if(vetor[i] > QtdMaior){
+            QtdMaior = vetor[i]
+        }
+            QtdMenor = vetor[0]
+        if(vetor[i] < QtdMenor){
+            QtdMenor = vetor[i]
+        }
+        
+    }
+return `o maior é ${QtdMaior} e o menor é ${QtdMenor}`
+
+}
+vetor = [12,324,645,23,677,2345,87]
+console.log(LerVetor(vetor))*/
+//========================================================================================================
+//Exercicio 31
+/*const ContaNega = function(vetor){
+    let negativos = 0
+    for(let i = 0; i < vetor.length;i++){
+        if(vetor[i] < 0){
+            negativos++
+        }
 
     }
-    
+return `existem ${negativos} números negativos`
 }
+vetor = [123,534,764,85,65,-34,6754,-1,-45]
+console.log(ContaNega(vetor))*/
+//==========================================================================================================
+//Exercicio 32
 
+/*const MediaAriti = function(vetor){
+    let soma = 0
+    for(let i = 0; i < vetor.length; i++){
+        soma += vetor[i]
+    }
+    let media = soma / vetor.length
+
+    return `a media aritimética do vetor é: ${media}`
 }
-outroContador()
+vetor = [20,20]
+console.log(MediaAriti(vetor))*/
+//============================================================================================================
+//Exercicio 33
+/*const concatenar = function(vetorInteiro,vetorString){
+    let uniao= vetorInteiro.concat(vetorString)
+
+    return uniao
+}
+let vetorInteiro = [1, 2, 3, 4]
+let vetorString = ['Arthur', 'Christian', 'Yuri', 'Galdino']
+
+console.log(concatenar(vetorInteiro,vetorString))*/
+//=========================================================================================================
+//Exercicio 34
+/*function verificacaoDeString (string1, string2) {
+    let estaContido = true;
+    for (let i = 0; i < string1.length; i++) {
+        let caractereString1 = string1.charAt(i).toLowerCase()
+        for(let j = 0; j < string2.length; j++){
+            let caractereString2 = string2.charAt(j).toLowerCase()
+            if(caractereString1 == caractereString2) {
+                estaContido = true
+                break
+            } else {
+                estaContido = false
+            }
+        }
+        if(!estaContido) {
+            return estaContido
+        }
+    }
+    return estaContido
+ }
+
+ console.log(verificacaoDeString('abc','cba'))*/
+ //=========================================================================================================
+ //exercicio 35
+ /*let vetor1 = [1,2,3,4,5]
+ let vetor2 = [6,7,8,9,10]
+
+let vetorTotal =[]
+Array.prototype.push.apply(vetor1,vetor2)
+Array.prototype.push.apply(vetorTotal,vetor1)
+console.log(vetorTotal)*/
+//======================================================================================================
+//exercicio 36
+/*const calc = function mult(vetor1,n1){
+    let result=[]
+    for(let i = 0;i < vetor1.length;i++){
+      result.push(vetor1[i] * n1)
+
+    }
+return result
+}
+const calc2 = function(vetor2,n2){
+    let result=[]
+    for(let i = 0;i < vetor2.length;i++){
+        if(vetor2[i] > 5){
+          result.push(vetor2[i] * n2)
+        } else{
+         result.push(vetor2[i] * 1)
+        }
+    }
+return result
+}
+let vetor1 = [2,2,4,6]
+let n1 = 2
+console.log(calc(vetor1,n1))
+console.log(calc2(vetor1,n1))*/
