@@ -7,3 +7,15 @@ setInterval(()=>{
 },1000)
 }
 new pessoa
+
+///////////////////////////////////////////////////////////////////////////
+function falar(){
+    this.fala ="olá"
+
+    setInterval(() => {
+       console.log(this.fala)
+    },1000);
+
+
+}
+new  falar

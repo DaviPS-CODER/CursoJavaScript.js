@@ -33,12 +33,22 @@ triangulo(2.50,4.34)*/
     menor([2, 65, 7, 2, 7, 3])*/
 ///////////////////////////////////////////////////////
 
-function buscarPalavrasSemelhantes(inicio, palavras) {
+/*function buscarPalavrasSemelhantes(inicio, palavras) {
     const resultado = []
     for (let palavra of palavras)
     if (palavra.includes(inicio))
     resultado.push(palavra)
     return resultado
+}*/
 
+const num = {x: 10}
 
+var x =1234123
+
+function whatThis(){
+    return x
 }
+console.log(whatThis())
+
+var thisInObj = num.x
+console.log(thisInObj)
