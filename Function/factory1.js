@@ -14,11 +14,12 @@ function CriarPessoa(){
 }
 console.log((CriarPessoa()))
 
-function criarProduto(){
-   return {
-       nome: "bala",
-        preço: 23
 
+function criarProduto(nome,valor){
+   
+    return {
+       nome: nome,
+        preço: valor
     }
 }
-console.log(criarProduto())
+console.log(criarProduto("bala",20))

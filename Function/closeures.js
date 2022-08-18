@@ -15,3 +15,6 @@ function fora(){
 
 const minhaFunção = fora()
 console.log(minhaFunção())
+
+// em suma, o contexto em que a function foi declarada, vem primeiro.
+// basicamente ela tem memória do local que ela foi definida.
