@@ -25,8 +25,8 @@ console.log(p1.getPrecoComDesconto(),p2.getPrecoComDesconto())
 
 //Função Factory
 function criarFuncionario(nome,salario,faltas){
-    return{
-        nome,
+    return{                                         //A função factory ela apenas retorna um objeto
+        nome,                           
         salario,
         faltas,
         getSalario(){
@@ -62,6 +62,7 @@ console.log(f2.getSalario())
 
 const pedido1 = new criarPedidos("davi","ninho com chocolate",20)
 console.log(pedido1.cliente,pedido1.valor())*/
+
 
 const filha = Object.create(null)
 filha.nome = "ana"

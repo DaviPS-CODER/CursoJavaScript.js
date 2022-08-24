@@ -18,7 +18,7 @@ Objeto.processamento //os valores e métodos estão numa "capsula" que seria o o
 //encapsulamento:
 //é  basicamento mostrar apenas o necessário, os detalhes da operação permanecem escondidos.
 // e caso precise fazer uma alteração, vc altera apenas oq está escondido, e n a interface tbm
-// é importante para gerar codependencia entre os objetos, em não expor todos os detalhes que cada um deles tem
+// é importante para não gerar codependencia entre os objetos, e não expor todos os detalhes que cada um deles tem
 
 //Herança (prototype):
 //basicamente é gerar objetos mais complexos a partir de outros mais simples
