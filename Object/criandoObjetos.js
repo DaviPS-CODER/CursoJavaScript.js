@@ -14,7 +14,7 @@ console.log(obj1)
 function produto(nome, preco, desc){  //nesse caso "nome" vai ficar visível, porém "preco" e "desc" vão ficar encapsulados
     this.nome = nome
     this.getPrecoComDesconto = () => {
-        return preco * (1 - desc)    //"preco" e "desc" não podem ser alterados, pois estão encapsulados dentro da função
+        return preco * (1 - desc)    
     }
 }
 

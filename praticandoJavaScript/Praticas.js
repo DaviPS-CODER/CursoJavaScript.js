@@ -1,5 +1,5 @@
 
-function despesas(itens) {
+/*function despesas(itens) {
     var total = 0
     for (let item of itens) {
         total += item.preco
@@ -238,4 +238,57 @@ const inverso = function (dado) {
 }
 
 inverso(8)
+
+////////////////////////////////////////////////*/
+/*const pessoa = {
+    nome: "adsda",
+    idade:10,
+    numero: 992213931
+}
+
+const removerPropriedade = function(obj,param){
+    const copia = Object.assign({},obj)
+    delete copia[param]
+    return console.log(copia)
+    
+}
+
+removerPropriedade(pessoa,"idade")*/
+
+
+/*var arrayProdutos = [{nome: "jornal",categoria: "info",preco:2},
+{nome: "celular",categoria:"cotidiano",preco:1500}]
+
+const despesasTotais = function(array){
+    let precoTotal = 0
+
+    for(i in array){
+        Object.entries(array[i]).forEach(e =>{
+            if(e[0] =="preco"){
+                precoTotal += e[1]
+            }
+         })
+    }
+    return console.log(`o preço total é: ${precoTotal}`)
+}
+despesasTotais([{nome: "jornal",categoria: "info",preco:2},
+{nome: "celular",categoria:"cotidiano",preco:1500}])*/
+
+/*const pessoa = {
+    nome: "davi",
+    idade: 12,
+    peso:20
+}
+
+function desfazeratributos(obj){
+    let arrayObj = Object.values(pessoa)
+    let palavraEmbara = []
+    
+    for(i in arrayObj){
+        palavraEmbara += arrayObj[i].reverse().join('')
+    }
+    return console.log(palavraEmbara)
+}
+
+desfazeratributos(pessoa)*/
 
