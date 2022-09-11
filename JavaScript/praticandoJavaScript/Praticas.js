@@ -317,3 +317,15 @@ menorNum([15,-5,35,65])*/
 
 repetir("davi",5)*/
 
+/*const contarCaracter = function(letra,frase){
+    let quant = 0
+    for(let i = 0; i < frase.length; i++){
+        if(frase[i] == letra){
+            quant ++
+        }
+    }
+return console.log(quant)
+
+}
+contarCaracter("c","Conhece-te a ti mesmo")*/
+
