@@ -1,0 +1,28 @@
+Uma situação para se usar o middleware/ chain of responsability:
+
+Digamos que eu tenho um processo, que para ser feito é necessário o uso de uma função.
+Dentro dessa função, eu tenho 3 passos, passo A,B e C. 
+Supondo também que esses passos possam ser reutilizados no futuro.
+
+Porém nesse caso, esses passos não tem muito reuso por estar tudo dentro de uma função.
+
+UMA OUTRA FORMA DE PENSAR:
+Você poderia pegar esse processo e fragmentar em 3 funções diferentes,
+em que cada uma poderia trabalhar de forma mais independente, mas ao mesmo tempo elas
+estariam interligadas com algumas chamadas para os próximos passos, então ainda estariam
+amarradas entre si.
+
+NO CASO DO MIDDLEWARE:
+Você tem alguns dados de entrada (request/response) e esses dados são passados para
+algoritmos que irão tratar esses dados,porém a informação de para aonde aquele dado vai
+não está nesse algoritmo em específico, mas sim na "cadeia" geral.
+E nesse caso a ordem desses algoritmos já não são mais tão importantes, porque que vai
+indicar para aonde o dado vai é alguma função "next". Mas vc pode ter, ou não uma função 
+faça isso.
+
+EM RESUMO:
+A ideia desse padrão de projeto é não deixar que ocorra uma codependência entre os processos,
+e sim que  possa ter fluxos diferentes por onde o dado possa passar, sem ter que ser sempre
+por um mesmo caminho. 
+Esse dado ele pode ser tratado dentro de uma middleware, e pode ter ou não uma "next" que mande
+esse dado para a próxima função, ou não.

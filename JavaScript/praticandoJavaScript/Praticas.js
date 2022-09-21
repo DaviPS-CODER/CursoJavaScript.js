@@ -329,3 +329,14 @@ return console.log(quant)
 }
 contarCaracter("c","Conhece-te a ti mesmo")*/
 
+/*const gastos = function(gasto){
+    let total = 0
+    gasto.forEach((e) => {total += e.preco})
+    return console.log(total)
+}
+
+gastos([
+    {nome:"jornal", cat: "infor",preco:89.99},
+    {nome:"cinema", cat: "lazer", preco: 150}
+])*/
+
