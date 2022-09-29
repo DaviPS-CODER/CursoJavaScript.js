@@ -340,3 +340,23 @@ gastos([
     {nome:"cinema", cat: "lazer", preco: 150}
 ])*/
 
+/*const soma = function(array){
+    let soma = 0
+    array.map(a => soma += a)
+    return console.log(soma)
+}
+
+soma([1,2,3])*/
+
+
+/*const receberPrimeiroEUltimo = function(array){
+    let arrayFinal = []
+    arrayFinal.push(array[0])
+
+    arrayFinal.push(array[array.length - 1])
+
+    return console.log(arrayFinal)
+}
+
+receberPrimeiroEUltimo([12,"oi", 9])*/
+
