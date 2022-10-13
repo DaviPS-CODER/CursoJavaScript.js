@@ -360,3 +360,29 @@ soma([1,2,3])*/
 
 receberPrimeiroEUltimo([12,"oi", 9])*/
 
+/*const contarCaracter = function(letra,frase){
+    let contador = 0
+    let Frase = frase.split('')
+    Frase.forEach(e =>{
+        if(e == letra){
+            contador++
+        }
+    })
+    
+    return console.log(contador)
+}
+
+contarCaracter("r", "a sorte favorece os audazes")*/
+
+/*const somenteNumeros = function(array){
+    let numeros = []
+    array.forEach(e =>{
+        if((e >= 1 | e <= 1) && (typeof e) == "number"){
+            numeros.push(e)
+        }
+    })
+
+    return console.log(numeros)
+}
+
+somenteNumeros(["javascript",1,"3","web",30])*/
