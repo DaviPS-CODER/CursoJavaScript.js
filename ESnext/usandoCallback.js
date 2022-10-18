@@ -7,11 +7,11 @@ const getTurma = (letra,callback) =>{
     http.get(url, res => {
         let resultado = ''
 
-        res.on("data", dados => {
+        res.on("data", dados => {          //pegando o que está no endereço e colocando numa string
             resultado += dados
         })
         res.on("end",() =>{
-            callback(JSON.parse(resultado))
+            callback(JSON.parse(resultado))     //transformando a string em JSON
         })
     })
 }
