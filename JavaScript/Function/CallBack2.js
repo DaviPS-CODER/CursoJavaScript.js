@@ -18,7 +18,7 @@ console.log(notasBaixas2)
 const notasBaixas3 = notas.filter(nota => nota <7)
 console.log(notasBaixas3)
 
-//callback é basicamente uma função que sendo passada para cada elemento, como um pente fino
+//callback é basicamente uma função que vai sendo passada para cada elemento, como um pente fino
 //se for positivo, executa, se não, segue para o próximo
 
 const notasAltas = notas.filter(function(notas)  {return notas > 7})
