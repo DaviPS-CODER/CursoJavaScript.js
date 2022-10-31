@@ -1,0 +1,41 @@
+Hyper | Text | Transfer | Protocol
+protocolo de transferência de hipertexto
+
+*Maior parte do tráfego da web é baseado em HTTP
+
+Esse hipertexto por sua vez é um link entre vários documentos HTML, 
+mas também funciona com vários formatos de documentos.
+
+
+* O HTTP está na camada de aplicação, isso significa que iremos acessar ele com mais frequência!;
+
+* O HTTP é um protocolo stateless, isso significa que quando a máquina faz um requisição,
+para o servidor é como se fosse a primeira vez. Não tem um "estado";
+
+* O HTTP é baseado na ideia de requisição e resposta,principalmente entre cliente e servidor.
+Nesse caso a requisição é a URL, que tem vários parâmetros, e o servidor responde de acordo;
+
+* O HTTP funciona em cima da stack TCP/IP;
+
+* E normalmente são retornados conteúdos para a formação de uma página web (HTML,CSS,JS...);
+
+* O HTTP tem vários métodos de fazer as requisições ( get,post,put,options,delete,trace,connect e head);
+-----------------------------------------------------------------------------------------------------------
+HTTPS é um importante protocolo de segurança, que faz com que os dados sejam criptografados,
+durante o tráfego.
+
+Requisição GET = Quando você tem uma requisição do tipo GET, os parâmetros vão na própria URL,
+e o corpo vai ficar vazio.
+
+Requisição POST = No caso do POST, os parâmetros vão dentro do corpo da requisição, mas isso
+não significa que você tem uma requisição segura.
+
+-----------------------------------------------------------------------------------------------------------
+GRUPOS DE STATUS HTTP
+
+1XX - INFORMAÇÃO
+2XX - SUCESSO
+3XX - REDIRECIONAMENTO
+4XX - ERRO NO CLIENTE
+5XX - ERRO NO SERVIDOR
+

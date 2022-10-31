@@ -1,0 +1,13 @@
+WEB & DNS = Antes da requisição chegar de fato no servidor, uma consulta DNS será feita.
+
+* DNS indica para qual IP aquele domínio irá apontar.
+Por isso o cliente precisa conferir o DNS para resolver o IP, 
+e em seguida a requisição vai para o IP indicado.
+
+* VIRTUAL HOSTING = Dentro de um server web é comum ter a ideia de virtual hosting,
+que nada mais é do que um server que tem dentro de si vários sites sendo atendidos.
+
+*ESTRUTURA DE PASTAS = Dentro de um server é muito comum ter uma estrutura de pastas de arquivos estáticos,
+
+*WEB STACK = É aquele conjunto de tecnologias que vão compor o seu server
+(linguagem, web server, DB, SO), e um dos mais famosos é o LAMP (linux, apache,MySQL,php).

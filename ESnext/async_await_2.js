@@ -15,7 +15,7 @@ function gerarNumero(min,max, numerosProibidos){
 
 }
 
-async function gerarMegaSena(qtdeNumeros)  {
+async function gerarMegaSena(qtdeNumeros,tentativas = 1)  {
     try{
         const numeros = []
         for(let _ of Array(qtdeNumeros).fill()){
@@ -23,8 +23,12 @@ async function gerarMegaSena(qtdeNumeros)  {
         }
         return numeros 
     }catch(e){
-        throw " que chatoo"        // dentro do "catch" eu posso estar tratando o erro
+        if(tentativas > 100){
+            throw "não deu certo!"  
+        }else{
+        return gerarMegaSena(qtdeNumeros,tentativas + 1 )        // dentro do "catch" eu posso estar tratando o erro     
     }
+}
     
 }
 
