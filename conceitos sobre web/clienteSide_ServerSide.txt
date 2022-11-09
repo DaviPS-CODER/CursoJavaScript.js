@@ -1,0 +1,27 @@
+Evolução nas Arquiteturas:
+
+Mainframe: você tinha terminais que acessavam a aplicação dentro do "Mainframe",
+tudo era centralizado no Mainframe.
+
+Client Server: você tinha um cliente rico (várias coisas processadas no lado do cliente) no desktop, 
+com regras de negócio, no próprio cliente,e as vezes esse cliente acessava o BD. 
+Isso se tratando de 2 camadas. O problema é que para atualizar, você tinha que ir fazendo isso em 
+todas as máquinas da rede.
+
+Web Server Side: É uma aplicação em que toda a renderização/lógica são processadas no lado
+do servidor, e assim a máquina do cliente serve apenas para mostrar isso. E uma vez que você
+muda a sua aplicação, todos os clientes são atualizados.
+
+Front-end + services: (client side) você volta para a ideia de uma aplicação rica que tem vários
+comportamentos na aplicação, e o acesso ao server é mais para obter dados. O processamento ficou
+mais compartilhado entre server side e client side.
+
+
+SERVER SIDE X CLIENT SIDE
+No server side, o HTML é gerado a partir do servidor, ou seja, não apenas dados mas o html
+é gerado no servidor e envia essa informação para ser renderizada no browser.
+
+Quando vc trabalha com uma aplicação client side, você normalmente tem o conceito SPA,
+que é (single page aplication) uma aplicação com uma única página, em que a primeira página é 
+renderizada e a partir dai ele pega o JS que você usou  para fazer a aplicação, e toda a parte
+visual é gerado dinâmicamente pelo JS. Server passa a ter os webs services, que irão gerar dados.

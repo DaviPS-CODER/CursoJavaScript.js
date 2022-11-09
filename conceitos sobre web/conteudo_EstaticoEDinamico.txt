@@ -1,0 +1,8 @@
+PONTO DE VISTA SERVER SIDE:
+É estático quando o server simplesmente ler o arquivo do disco e serve à página para ser
+renderizada apenas com conteudo de arquivos, gerados a partir da leitura de arquivos no servidor.
+Toda vez que vc der um refresh na página, o que é  estático volta a ser o que era.
+
+E o conteudo dinâmico é aquele gerado a partir de um código. E sendo gerado de forma dinamica,
+ele pode incluir hora certa, incluir informações oriundas do BD para gerar um arquivo personalizado.
+O conteudo dinâmico tem a capacidade de continuar  alterado mesmo depois do refresh.

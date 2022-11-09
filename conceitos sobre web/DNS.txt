@@ -1,0 +1,9 @@
+A principal tarefa dele é fazer uma tradução dos domínios para endereços IP.
+É basicamente um sistema que gerencia e distribui os nomes para uma rede de máquinas,
+estejam conectadas à internet ou uma rede privada.
+
+Funcionamento me passos: ( caso de sucesso )
+1- usuário informa o endereço no browser
+2- computador envia uma consulta DNS para o servidor local
+3- O servidor responde com o endereço IP
+4- computador acessa o servidor a partir do IP obtido.
