@@ -1,0 +1,6 @@
+Um Web service é utilizado para transferir dados através de protocolos de comunicação para diferentes plataformas, 
+independentemente das linguagens de programação utilizadas nessas plataformas. 
+
+Os Web services funcionam com qualquer sistema operativo, 
+plataforma de hardware ou linguagem de programação de suporte Web.
+
